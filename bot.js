@@ -117,7 +117,7 @@ bot.start(async (ctx) => {
 '│➣│▸ */silent on/off - Toggle silent mode*',
 '│➣│▸ */autoforward on/off - Toggle auto-forward*',
 '*╰────────❍─────❍❍➣*',
-    ]'';
+    ]
 
     const welcomeMessage = `${botStatus}${basicCommands}${adminCommands}`;
 
