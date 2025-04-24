@@ -158,35 +158,35 @@ bot.command('help', async (ctx) => {
     
     // Main help sections
     const helpSections = [
-     🆘 Bot Usage Guide
+     '🆘 *Bot Usage Guidelines *',
 
-📌 Bot Functions:
-• Forwards media files from one channel to another
-• Supports videos, images, documents, and audio
-• Can add a watermark to forwarded content
+'*'📌 *Bot Functions:*',
+'*'• *Forwards media files from one channel to another*',
+'*• Supports videos, images, documents, and audio*',
+'*• Can add a watermark to forwarded content*',
 
-⚙️ How to Use:
-1. Add the bot to the source and destination channels
-2. Ensure the bot has admin permissions
-3. Configure settings as needed
+'*⚙️ How to Use:*',
+'*1. Add the bot to the source and destination channels*',
+'*2. Ensure the bot has admin permissions*',
+'*3. Configure settings as needed*',
 
-🔹 Common Commands:
-/start - View the bot's status
-/help - View this help message
+'*🔹 Common Commands:*',
+'*/start - View the bot's status*',
+'*/help - View this help message*',
 
-🔐 Admin Commands:
-/forward - Manually forward the last post
-/forwardold number - Forward older posts
-/autoforward on/off - Toggle auto forward
-/silent on/off - Toggle silent mode
-/settypes type - Set the file type for forwarding
-/setwatermark text - Set the watermark text
-/togglewatermark - Toggle the watermark
+'*🔐 Admin Commands:*',
+'*/forward - Manually forward the last post*',
+'*/forwardold number - Forward older posts*',
+'*/autoforward on/off - Toggle auto forward*',
+'*/silent on/off - Toggle silent mode*',
+'*/settypes type - Set the file type for forwarding*',
+'*/setwatermark text - Set the watermark text*',
+'*/togglewatermark - Toggle the watermark*',
 
-❓ Need more help?
-Goodboy.
-Contact the support team @TcronebNet
-Or visit our channel @paidtechzone
+'*❓ Need more help?*',
+'*Goodboy.*',
+'*Contact the support team @TcronebNet*',
+'*Or visit our channel @paidtechzone*',
     ];
 
     // Add admin commands section if user is admin
