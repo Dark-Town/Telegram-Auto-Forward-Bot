@@ -512,7 +512,7 @@ bot.catch((err, ctx) => {
 
 // Webhook setup
 if (process.env.VERCEL_URL) {
-  const webhookUrl = `https://auto-seven-livid.vercel.app/webhook`;
+  const webhookUrl = `https://telegram-auto-forward-bot-lawj.onrender.com/webhook`;
   
   bot.telegram.setWebhook(webhookUrl)
     .then(() => console.log(`Webhook successfully set to: ${webhookUrl}`))
