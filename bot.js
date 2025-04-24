@@ -95,20 +95,18 @@ bot.start(async (ctx) => {
     // Build welcome message sections
     const botStatus = [
             
-'╭────────❒⁠⁠⁠⁠ *PAID TECH SYSTEM* ➣*',
-'│➣│▸* - Source: \-1001935700000*',
-'│➣│▸* - Destination: \-100215600000*',
-'╰────────❍─────❍❍➣*',
-'╭────────❒⁠⁠⁠⁠ *PAID TECH* ➣*',
-'│➣│▸* - Auto-forward: ✅ ON*',
-'│➣│▸* - Silent mode: ✅ ON*',
-'│➣│▸* - Watermark: ✅ ON*',
- '╰────────❍─────❍❍➣*',
-'╭────────❒⁠⁠⁠⁠ *PAID-WATERMARK* ➣*',
-'│➣│▸ */setwatermark text - Set watermark text*',
-' │➣│▸*/togglewatermark - Toggle watermark*',
-'*╰────────❍─────❍❍➣ *',
-'╭────────❒⁠⁠⁠⁠ *PAID TECH TOOLS* ➣*',
+'PAID TECH SYSTEM ➣',
+'- Source: \-1001935700000',
+'- Destination: \-100215600000',
+
+'- Auto-forward: ✅ ON',
+'- Silent mode: ✅ ON',
+'- Watermark: ✅ ON',
+
+'/setwatermark text - Set watermark text',
+'/togglewatermark - Toggle watermark',
+
+'
 '│➣│▸ */help - Show help instructions*',
 '│➣│▸ */forward - Manually forward last post*',
 '│➣│▸* /forwardold count - Forward old posts*',
@@ -116,8 +114,7 @@ bot.start(async (ctx) => {
 '│➣│▸*- Last forwarded: None*',
 '│➣│▸ */silent on/off - Toggle silent mode*',
 '│➣│▸ */autoforward on/off - Toggle auto-forward*',
-'*╰────────❍─────❍❍➣*',
-    ]
+]
 
     const welcomeMessage = `${botStatus}${basicCommands}${adminCommands}`;
 
@@ -207,7 +204,7 @@ bot.command('help', async (ctx) => {
     helpSections.push(
   '',
   '❓ *আরো সাহায্য প্রয়োজন?*',
-  'Goodboy [.](https://graph.org/file/4e8a1172e8ba4b7a0bdfa.jpg)',
+  'Goodboy [.](https://i.ibb.co/b5M2jp8h/Polish-20250419-231310921.jpg)',
   'সাপোর্ট টিমের সাথে যোগাযোগ করুন [@Farooq_is_king](https://t.me/TcronebNet)',
   'অথবা আমাদের চ্যানেল ভিজিট করুন [@Opleech_WD](https://t.me/Paidtechzone)'
     );
