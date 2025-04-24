@@ -208,8 +208,8 @@ bot.command('help', async (ctx) => {
   '',
   '❓ *আরো সাহায্য প্রয়োজন?*',
   'Goodboy [.](https://graph.org/file/4e8a1172e8ba4b7a0bdfa.jpg)',
-  'সাপোর্ট টিমের সাথে যোগাযোগ করুন [@Farooq_is_king](https://t.me/Farooq_is_king)',
-  'অথবা আমাদের চ্যানেল ভিজিট করুন [@Opleech_WD](https://t.me/Opleech_WD)'
+  'সাপোর্ট টিমের সাথে যোগাযোগ করুন [@Farooq_is_king](https://t.me/TcronebNet)',
+  'অথবা আমাদের চ্যানেল ভিজিট করুন [@Opleech_WD](https://t.me/Paidtechzone)'
     );
 
     // Create help keyboard
