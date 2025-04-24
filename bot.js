@@ -160,8 +160,8 @@ bot.command('help', async (ctx) => {
     const helpSections = [
      '🆘 *Bot Usage Guidelines*',
 
-'*'📌 *Bot Functions:*',
-'*'• *Forwards media files from one channel to another*',
+'📌 *Bot Functions:*',
+'• *Forwards media files from one channel to another*',
 '*• Supports videos, images, documents, and audio*',
 '*• Can add a watermark to forwarded content*',
 
