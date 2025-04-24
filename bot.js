@@ -94,29 +94,29 @@ bot.start(async (ctx) => {
     
     // Build welcome message sections
     const botStatus = [
-            🤖 Advanced Forward Bot
-╭────────❒⁠⁠⁠⁠ *PAID TECH SYSTEM* ➣
-│➣│▸ - Source: \-1001935700000
-│➣│▸ - Destination: \-100215600000
-╰────────❍─────❍❍➣
-╭────────❒⁠⁠⁠⁠ *PAID TECH* ➣
-│➣│▸ - Auto-forward: ✅ ON
-│➣│▸ - Silent mode: ✅ ON
-│➣│▸ - Watermark: ✅ ON
- ╰────────❍─────❍❍➣
-╭────────❒⁠⁠⁠⁠ *PAID-WATERMARK* ➣
-│➣│▸ /setwatermark text - Set watermark text
- │➣│▸/togglewatermark - Toggle watermark
-╰────────❍─────❍❍➣ 
-╭────────❒⁠⁠⁠⁠ *PAID TECH TOOLS* ➣
-│➣│▸ /help - Show help instructions
-│➣│▸ /forward - Manually forward last post
-│➣│▸ /forwardold count - Forward old posts 
-│➣│▸ /settypes types - Set file types
-│➣│▸- Last forwarded: None
-│➣│▸ /silent on/off - Toggle silent mode
-│➣│▸ /autoforward on/off - Toggle auto-forward
-╰────────❍─────❍❍➣ 
+            
+'╭────────❒⁠⁠⁠⁠ *PAID TECH SYSTEM* ➣
+'│➣│▸ - Source: \-1001935700000
+'│➣│▸ - Destination: \-100215600000
+'╰────────❍─────❍❍➣
+'╭────────❒⁠⁠⁠⁠ *PAID TECH* ➣
+'│➣│▸ - Auto-forward: ✅ ON
+'│➣│▸ - Silent mode: ✅ ON
+'│➣│▸ - Watermark: ✅ ON
+ '╰────────❍─────❍❍➣
+'╭────────❒⁠⁠⁠⁠ *PAID-WATERMARK* ➣
+'│➣│▸ /setwatermark text - Set watermark text
+' │➣│▸/togglewatermark - Toggle watermark
+'╰────────❍─────❍❍➣ 
+'╭────────❒⁠⁠⁠⁠ *PAID TECH TOOLS* ➣
+'│➣│▸ /help - Show help instructions
+'│➣│▸ /forward - Manually forward last post
+'│➣│▸ /forwardold count - Forward old posts 
+'│➣│▸ /settypes types - Set file types
+'│➣│▸- Last forwarded: None
+'│➣│▸ /silent on/off - Toggle silent mode
+'│➣│▸ /autoforward on/off - Toggle auto-forward
+'╰────────❍─────❍❍➣ 
     ].join('\n') : '';
 
     const welcomeMessage = `${botStatus}${basicCommands}${adminCommands}`;
