@@ -158,7 +158,7 @@ bot.command('help', async (ctx) => {
     
     // Main help sections
     const helpSections = [
-     '🆘 *Bot Usage Guidelines *',
+     '🆘 *Bot Usage Guidelines*',
 
 '*'📌 *Bot Functions:*',
 '*'• *Forwards media files from one channel to another*',
