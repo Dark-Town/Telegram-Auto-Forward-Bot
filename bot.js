@@ -98,6 +98,8 @@ bot.start(async (ctx) => {
 'PAID TECH SYSTEM ➣',
 '- Source: \-1001935700000',
 '- Destination: \-100215600000',
+const basicCommands = [
+      '',
 
 '- Auto-forward: ✅ ON',
 '- Silent mode: ✅ ON',
