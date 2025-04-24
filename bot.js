@@ -8,7 +8,7 @@ const cache = new NodeCache({ stdTTL: 86400 });
 
 // Watermark configuration
 const watermarkConfig = {
-  text: "\n\n🔹📌 Powered by  @Opleech_WD",
+  text: "\n\n🔹📌 Powered by  @paidtechzone",
   enabled: true              
 };
 
@@ -94,35 +94,29 @@ bot.start(async (ctx) => {
     
     // Build welcome message sections
     const botStatus = [
-      '🤖 *Advanced Forward Bot*',
-      '',
-      '🔹 *Bot Status:*',
-      `- Source: ${escapeMd(config.SOURCE_CHANNEL_ID || 'Not set')}`,
-      `- Destination: ${escapeMd(config.DESTINATION_CHANNEL_ID || 'Not set')}`,
-      `- Auto-forward: ${settings.autoForward ? '✅ ON' : '❌ OFF'}`,
-      `- Silent mode: ${settings.silentForward ? '✅ ON' : '❌ OFF'}`,
-      `- File types: ${escapeMd((settings.fileTypes || []).join(', '))}`,
-      `- Watermark: ${watermarkConfig?.enabled ? '✅ ON' : '❌ OFF'}`,
-      `- Last forwarded: ${escapeMd(progress.lastProcessedId || 'None')}`
-    ].join('\n');
-
-    const basicCommands = [
-      '',
-      '📌 *Available Commands:*',
-      '/start - Show bot status',
-      '/help - Show help instructions'
-    ].join('\n');
-
-    const adminCommands = isAdmin ? [
-      '',
-      '⚙️ *Admin Commands:*',
-      '/forward - Manually forward last post',
-      '/forwardold [count] - Forward old posts',
-      '/autoforward [on/off] - Toggle auto-forward',
-      '/silent [on/off] - Toggle silent mode',
-      '/settypes [types] - Set file types',
-      '/setwatermark [text] - Set watermark text',
-      '/togglewatermark - Toggle watermark'
+            🤖 Advanced Forward Bot
+╭────────❒⁠⁠⁠⁠ *PAID TECH SYSTEM* ➣
+│➣│▸ - Source: \-1001935700000
+│➣│▸ - Destination: \-100215600000
+╰────────❍─────❍❍➣
+╭────────❒⁠⁠⁠⁠ *PAID TECH* ➣
+│➣│▸ - Auto-forward: ✅ ON
+│➣│▸ - Silent mode: ✅ ON
+│➣│▸ - Watermark: ✅ ON
+ ╰────────❍─────❍❍➣
+╭────────❒⁠⁠⁠⁠ *PAID-WATERMARK* ➣
+│➣│▸ /setwatermark text - Set watermark text
+ │➣│▸/togglewatermark - Toggle watermark
+╰────────❍─────❍❍➣ 
+╭────────❒⁠⁠⁠⁠ *PAID TECH TOOLS* ➣
+│➣│▸ /help - Show help instructions
+│➣│▸ /forward - Manually forward last post
+│➣│▸ /forwardold count - Forward old posts 
+│➣│▸ /settypes types - Set file types
+│➣│▸- Last forwarded: None
+│➣│▸ /silent on/off - Toggle silent mode
+│➣│▸ /autoforward on/off - Toggle auto-forward
+╰────────❍─────❍❍➣ 
     ].join('\n') : '';
 
     const welcomeMessage = `${botStatus}${basicCommands}${adminCommands}`;
@@ -132,12 +126,12 @@ bot.start(async (ctx) => {
       reply_markup: {
         inline_keyboard: [
           [{
-            text: '❖ 𝐖𝐃 𝐙𝐎𝐍𝐄 ❖ ™',
-            url: 'https://t.me/Opleech_WD'
+            text: '❖ PAID TECH ZONE ❖ ™',
+            url: 'https://t.me/paidtechzone'
           }],
           [{
             text: '🆘 Get Help',
-            url: 'https://t.me/Farooq_is_king'
+            url: 'https://t.me/TcronebNet'
           }]
         ]
       }
@@ -164,21 +158,35 @@ bot.command('help', async (ctx) => {
     
     // Main help sections
     const helpSections = [
-      '🆘 *বট ব্যবহারের নির্দেশিকা*',
-      '',
-      '📌 *বটের কাজ:*',
-      '• একটি চ্যানেল থেকে অন্য চ্যানেলে মিডিয়া ফাইল ফরওয়ার্ড করা',
-      '• ভিডিও, ছবি, ডকুমেন্ট এবং অডিও সাপোর্ট করে',
-      '• ফরওয়ার্ড করা কন্টেন্টে ওয়াটারমার্ক যোগ করতে পারে',
-      '',
-      '⚙️ *ব্যবহার পদ্ধতি:*',
-      '1. বটটিকে সোর্স এবং ডেস্টিনেশন চ্যানেলে অ্যাড করুন',
-      '2. নিশ্চিত করুন বটের অ্যাডমিন পারমিশন আছে',
-      '3. প্রয়োজন অনুযায়ী সেটিংস কনফিগার করুন',
-      '',
-      '🔹 *সাধারণ কমান্ড:*',
-      '/start - বটের স্ট্যাটাস দেখুন',
-      '/help - এই হেল্প মেসেজ দেখুন'
+     🆘 Bot Usage Guide
+
+📌 Bot Functions:
+• Forwards media files from one channel to another
+• Supports videos, images, documents, and audio
+• Can add a watermark to forwarded content
+
+⚙️ How to Use:
+1. Add the bot to the source and destination channels
+2. Ensure the bot has admin permissions
+3. Configure settings as needed
+
+🔹 Common Commands:
+/start - View the bot's status
+/help - View this help message
+
+🔐 Admin Commands:
+/forward - Manually forward the last post
+/forwardold number - Forward older posts
+/autoforward on/off - Toggle auto forward
+/silent on/off - Toggle silent mode
+/settypes type - Set the file type for forwarding
+/setwatermark text - Set the watermark text
+/togglewatermark - Toggle the watermark
+
+❓ Need more help?
+Goodboy.
+Contact the support team @TcronebNet
+Or visit our channel @paidtechzone
     ];
 
     // Add admin commands section if user is admin
@@ -209,12 +217,12 @@ bot.command('help', async (ctx) => {
       reply_markup: {
         inline_keyboard: [
           [{
-            text: '📢 আমাদের চ্যানেল',
-            url: 'https://t.me/Opleech_WD'
+            text: '📢 OUR CHANNEL',
+            url: 'https://t.me/paidtechzone'
           }],
           [{
-            text: '🆘 জরুরি সাহায্য',
-            url: 'https://t.me/Farooq_is_king'
+            text: '🆘 GET HELP',
+            url: 'https://t.me/TcronebNet'
           }]
         ]
       }
@@ -249,7 +257,7 @@ bot.command('setwatermark', async (ctx) => {
     return ctx.reply(
       `Current watermark: ${watermarkConfig.text || 'None'}\n\n`
       + `Usage: /setwatermark [your text]\n`
-      + `Example: /setwatermark \\n\\n📌 Powered by @Opleech_WD`
+      + `Example: /setwatermark \\n\\n📌 Powered by @paidtechzone`
     ).catch(console.error);
   }
 
