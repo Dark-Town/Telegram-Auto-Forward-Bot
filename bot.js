@@ -193,14 +193,14 @@ bot.command('help', async (ctx) => {
     if (isAdmin) {
       helpSections.push(
         '',
-        '🔐 *অ্যাডমিন কমান্ড:*',
-        '/forward - শেষ পোস্ট ম্যানুয়ালি ফরওয়ার্ড করুন',
-        '/forwardold [সংখ্যা] - পুরনো পোস্ট ফরওয়ার্ড করুন',
-        '/autoforward [on/off] - অটো ফরওয়ার্ড টগল করুন',
-        '/silent [on/off] - সাইলেন্ট মোড টগল করুন',
-        '/settypes [টাইপ] - ফরওয়ার্ড করার ফাইল টাইপ সেট করুন',
-        '/setwatermark [টেক্সট] - ওয়াটারমার্ক টেক্সট সেট করুন',
-        '/togglewatermark - ওয়াটারমার্ক টগল করুন'
+        '🔐 *Admin Commands:*',
+        '/forward - Manually forward the last post',
+        '/forwardold number - Forward older posts',
+        '/autoforward on/off - Toggle auto forward ',
+        '/silent on/off - Toggle silent mode ',
+        '/settypes type - Set the file type for forwarding',
+        '/setwatermark text - Set the watermark text',
+        'togglewatermark - Toggle the watermark'
       );
     }
 
