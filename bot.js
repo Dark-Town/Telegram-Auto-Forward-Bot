@@ -171,7 +171,7 @@ bot.command('help', async (ctx) => {
 '*3. Configure settings as needed*',
 
 '*🔹 Common Commands:*',
-'/start - View the bot's status',
+'/start - View the bots status',
 '/help - View this help message',
 
 '*🔐 Admin Commands:*',
