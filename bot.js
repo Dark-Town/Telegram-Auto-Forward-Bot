@@ -94,31 +94,42 @@ bot.start(async (ctx) => {
     
     // Build welcome message sections
     const botStatus = [
-            
-'PAID TECH SYSTEM ➣',
-'- Source: \-1001935700000',
-'- Destination: \-100215600000',
-const basicCommands = [
+      '🤖 *Advanced Forward Bot*',
       '',
+      '🔹 *Bot Status:*',
+      `- Source: ${escapeMd(config.SOURCE_CHANNEL_ID || 'Not set')}`,
+      `- Destination: ${escapeMd(config.DESTINATION_CHANNEL_ID || 'Not set')}`,
+      `- Auto-forward: ${settings.autoForward ? '✅ ON' : '❌ OFF'}`,
+      `- Silent mode: ${settings.silentForward ? '✅ ON' : '❌ OFF'}`,
+      `- File types: ${escapeMd((settings.fileTypes || []).join(', '))}`,
+      `- Watermark: ${watermarkConfig?.enabled ? '✅ ON' : '❌ OFF'}`,
+      `- Last forwarded: ${escapeMd(progress.lastProcessedId || 'None')}`
+    ].join('\n');
 
-'- Auto-forward: ✅ ON',
-'- Silent mode: ✅ ON',
-'- Watermark: ✅ ON',
+    const basicCommands = [
+      '',
+      '📌 *Available Commands:*',
+      '/start - Show bot status',
+      '/help - Show help instructions'
+    ].join('\n');
 
-'/setwatermark text - Set watermark text',
-'/togglewatermark - Toggle watermark',
-
-
-'│➣│▸ */help - Show help instructions*',
-'│➣│▸ */forward - Manually forward last post*',
-'│➣│▸* /forwardold count - Forward old posts*',
-'│➣│▸ */settypes types - Set file types*',
-'│➣│▸*- Last forwarded: None*',
-'│➣│▸ */silent on/off - Toggle silent mode*',
-'│➣│▸ */autoforward on/off - Toggle auto-forward*',
+    const adminCommands = isAdmin ? [
+      '',
+      '⚙️ *Admin Commands:*',
+      '/forward - Manually forward last post',
+      '/forwardold [count] - Forward old posts',
+      '/autoforward [on/off] - Toggle auto-forward',
+      '/silent [on/off] - Toggle silent mode',
+      '/settypes [types] - Set file types',
+      '/setwatermark [text] - Set watermark text',
+      '/togglewatermark - Toggle watermark'
+    ].join('\n') : '';
 
     const welcomeMessage = `${botStatus}${basicCommands}${adminCommands}`;
 
+    // Create inline keyboard with error handling
+            
+'
     // Create inline keyboard with error handling
     const channelKeyboard = {
       reply_markup: {
