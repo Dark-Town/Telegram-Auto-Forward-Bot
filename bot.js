@@ -127,7 +127,6 @@ bot.start(async (ctx) => {
       '/togglewatermark - Toggle watermark'
     ].join('\n') : '';
 
-    const welcomeMessage = `${botStatus}${basicCommands}${adminCommands}`;
 
     // Create inline keyboard with error handling
     const channelKeyboard = {
