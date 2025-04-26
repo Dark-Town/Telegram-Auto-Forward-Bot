@@ -127,9 +127,6 @@ bot.start(async (ctx) => {
     const welcomeMessage = `${botStatus}${basicCommands}${adminCommands}`;
 
     // Create inline keyboard with error handling
-            
-'
-    // Create inline keyboard with error handling
     const channelKeyboard = {
       reply_markup: {
         inline_keyboard: [
