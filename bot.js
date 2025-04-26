@@ -104,9 +104,10 @@ bot.start(async (ctx) => {
       `│➣│▸ Silent mode: ${settings.silentForward ? '✅ ON' : '❌ OFF'}`,
       `-│➣│▸File types: ${escapeMd((settings.fileTypes || []).join(', '))}`,
       `│➣│▸ Watermark: ${watermarkConfig?.enabled ? '✅ ON' : '❌ OFF'}`,
-      `│➣│▸ Last forwarded: ${escapeMd(progress.lastProcessedId || 'None')}`,
+      `│➣│▸ Last forwarded: ${escapeMd(progress.lastProcessedId || 'None')}`
        `╰────────❍─────❍❍➣',
     ].join('\n');
+    
     const basicCommands = [
       '',
       '📌 *Available Commands:*',
