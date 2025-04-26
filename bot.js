@@ -105,7 +105,7 @@ bot.start(async (ctx) => {
       `-│➣│▸File types: ${escapeMd((settings.fileTypes || []).join(', '))}`,
       `│➣│▸ Watermark: ${watermarkConfig?.enabled ? '✅ ON' : '❌ OFF'}`,
       `│➣│▸ Last forwarded: ${escapeMd(progress.lastProcessedId || 'None')}`
-       `╰────────❍─────❍❍➣',
+      
     ].join('\n');
     
     const basicCommands = [
@@ -126,6 +126,7 @@ bot.start(async (ctx) => {
       '/setwatermark [text] - Set watermark text',
       '/togglewatermark - Toggle watermark'
     ].join('\n') : '';
+const welcomeMessage = `${botStatus}${basicCommands}${adminCommands}`;
 
 
     // Create inline keyboard with error handling
