@@ -95,16 +95,18 @@ bot.start(async (ctx) => {
     // Build welcome message sections
     const botStatus = [
       
-      '🔹 *Bot Status:*',
-      `- Source: ${escapeMd(config.SOURCE_CHANNEL_ID || 'Not set')}`,
-      `- Destination: ${escapeMd(config.DESTINATION_CHANNEL_ID || 'Not set')}`,
-      `- Auto-forward: ${settings.autoForward ? '✅ ON' : '❌ OFF'}`,
-      `- Silent mode: ${settings.silentForward ? '✅ ON' : '❌ OFF'}`,
-      `- File types: ${escapeMd((settings.fileTypes || []).join(', '))}`,
-      `- Watermark: ${watermarkConfig?.enabled ? '✅ ON' : '❌ OFF'}`,
-      `- Last forwarded: ${escapeMd(progress.lastProcessedId || 'None')}`
+      '🤖 *Advanced Forward Bot*',
+      '',
+      '╭────────❒⁠⁠⁠⁠ *Bot Status:*➣', 
+      `-│➣│▸Source: ${escapeMd(config.SOURCE_CHANNEL_ID || 'Not set')}`,
+      `-│➣│▸Destination: ${escapeMd(config.DESTINATION_CHANNEL_ID || 'Not set')}`,
+      `│➣│▸Auto-forward: ${settings.autoForward ? '✅ ON' : '❌ OFF'}`,
+      `│➣│▸ Silent mode: ${settings.silentForward ? '✅ ON' : '❌ OFF'}`,
+      `-│➣│▸File types: ${escapeMd((settings.fileTypes || []).join(', '))}`,
+      `│➣│▸ Watermark: ${watermarkConfig?.enabled ? '✅ ON' : '❌ OFF'}`,
+      `│➣│▸ Last forwarded: ${escapeMd(progress.lastProcessedId || 'None')}`,
+       `╰────────❍─────❍❍➣',
     ].join('\n');
-
     const basicCommands = [
       '',
       '📌 *Available Commands:*',
