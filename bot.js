@@ -94,8 +94,7 @@ bot.start(async (ctx) => {
     
     // Build welcome message sections
     const botStatus = [
-      '🤖 *Advanced Forward Bot*',
-      '',
+      
       '🔹 *Bot Status:*',
       `- Source: ${escapeMd(config.SOURCE_CHANNEL_ID || 'Not set')}`,
       `- Destination: ${escapeMd(config.DESTINATION_CHANNEL_ID || 'Not set')}`,
@@ -136,11 +135,11 @@ bot.start(async (ctx) => {
         inline_keyboard: [
           [{
             text: '❖ PAID TECH ZONE ❖ ™',
-            url: 'https://t.me/paidtechzone'
+            url: 'https://t.me/paidtechzone',
           }],
           [{
             text: '🆘 Get Help',
-            url: 'https://t.me/TcronebNet'
+            url: 'https://t.me/TcronebNet',
           }]
         ]
       }
