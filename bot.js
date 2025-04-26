@@ -108,7 +108,7 @@ const basicCommands = [
 '/setwatermark text - Set watermark text',
 '/togglewatermark - Toggle watermark',
 
-'
+
 '│➣│▸ */help - Show help instructions*',
 '│➣│▸ */forward - Manually forward last post*',
 '│➣│▸* /forwardold count - Forward old posts*',
@@ -116,7 +116,6 @@ const basicCommands = [
 '│➣│▸*- Last forwarded: None*',
 '│➣│▸ */silent on/off - Toggle silent mode*',
 '│➣│▸ */autoforward on/off - Toggle auto-forward*',
-]
 
     const welcomeMessage = `${botStatus}${basicCommands}${adminCommands}`;
 
